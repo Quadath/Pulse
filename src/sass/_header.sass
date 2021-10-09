@@ -31,3 +31,25 @@
         flex-direction: column
         align-items: flex-end
 
+@media (max-width: 991px)
+    .header
+        &__logo
+            margin-left: 20px
+        &__contacts
+            margin-right: 30px
+
+@media (max-width: 767px)
+    .header
+        &__official
+            display: none
+
+@media (max-width: 575px)
+    .header
+        &__logo
+            width: 130px
+            margin-left: 10px
+        &__contacts
+            margin-right: 10px
+        &__phone
+            font-size: 14px
+

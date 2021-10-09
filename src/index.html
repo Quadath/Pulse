@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/font.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
         
 
     <title>Pulse</title>
 </head>
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <a class="header__logo">
@@ -42,8 +46,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="advantages">
+    </section>
+    <section class="advantages">
         <div class="container">
             <h2 class="advantages__header">наши преимущества</h2>
             <div class="advantages__wrapper">
@@ -69,11 +73,154 @@
                     <div class="advantages__text">
                         Помогаем с обучением правильной технике бега! 
                         Дружим с крупнейшей школой бега
-                        в<br>России - <span>I LOVE RUNNING.</span>
+                        в<br>России - <i>I LOVE RUNNING.</i>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="consultation">
+        <div class="container">
+            <h2 class="title title_left">Получите бесплатную консультацию<br>
+                 по подбору пульсометра</h2>
+                 <div class="consultation__descr">
+                     Просто заполните форму заявки<br>
+                     и мы вам перезвоним в течении 10 минут
+                 </div>
+                 <form class="feed-form" action="#">
+                    <input name="name" required placeholder="Ваше имя" value = "" type="text">
+                    <input name="phone" required placeholder="Ваше телефон" value = "" type="number">
+                    <input name="email" placeholder="Ваш E-mail" value = "" type="email">
+
+                    <button>Заказать консультацию</button>
+                 </form>
+        </div>
+    </section>
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div><img src="img/slide1.png" alt=""></div>
+                <div><img src="img/slide2.png" alt=""></div>
+                <div><img src="img/slide3.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <h2 class="title">Каталог пульсометров</h2>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab"><div>для фитнеса</div></li>
+                <li class="catalog__tab"><div>для бега</div></li>
+                <li class="catalog__tab"><div>для триатлона</div></li>
+            </ul>
+
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <img src="img/pulsometr.png" alt="pulsometr">
+                    <div class="catalog-item__subtitle">Пульсометр <span>Polar FT1</span></div>
+                    <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                    <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item_old-price"><s>4 750 руб.</s></div>
+                            <div class="catalog-item_new-price">4 500 руб.</div>
+                        </div>
+                        <button class="catalog-item__btn">купить</button>
+                    </div>
+                </div>
+                
+                <div class="catalog-item">
+                    <img src="img/pulsometr.png" alt="pulsometr">
+                    <div class="catalog-item__subtitle">Пульсометр <span>Suunto M2</span></div>
+                    <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                    <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item_old-price"><s>6 690 руб.</s></div>
+                            <div class="catalog-item_new-price">6 641 руб.</div>
+                        </div>
+                        <button class="catalog-item__btn">купить</button>
+                    </div>
+                </div>
+
+                 <div class="catalog-item__info">
+                     <div class="wrapper">
+                         <ul class="catalog-item__info_list">
+                             <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                             <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                             <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                         </ul>
+                         <a href="" class="catalog-item__info_link_back">Назад</a>
+                     </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item_prices">
+                            <div class="catalog-item_old-price"><s>4 750 руб.</s></div>
+                            <div class="catalog-item_new-price">4 500 руб.</div>
+                        </div>
+                        <button class="catalog-item__btn">купить</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <img src="img/pulsometr.png" alt="pulsometr">
+                    <div class="catalog-item__subtitle">Пульсометр <span>Polar FT1</span></div>
+                    <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                    <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item_old-price"><s>4 750 руб.</s></div>
+                            <div class="catalog-item_new-price">4 500 руб.</div>
+                        </div>
+                        <button class="catalog-item__btn">купить</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <img src="img/pulsometr.png" alt="pulsometr">
+                    <div class="catalog-item__subtitle">Пульсометр <span>Polar FT1</span></div>
+                    <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                    <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item_old-price"><s>4 750 руб.</s></div>
+                            <div class="catalog-item_new-price">4 500 руб.</div>
+                        </div>
+                        <button class="catalog-item__btn">купить</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <img src="img/pulsometr.png" alt="pulsometr">
+                    <div class="catalog-item__subtitle">Пульсометр <span>Polar FT1</span></div>
+                    <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                    <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item_old-price"><s>4 750 руб.</s></div>
+                            <div class="catalog-item_new-price">4 500 руб.</div>
+                        </div>
+                        <button class="catalog-item__btn">купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content" ></div>
+            <div class="catalog__content"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>				
+    <script src="js/slick.min.js"></script> 
+    <script src="js/script.js"></script>
 </body>
 </html>

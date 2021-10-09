@@ -1,11 +1,27 @@
 @import 'base/variables'
 
-@import '_promo'
 @import '_header'
+@import '_promo'
 @import '_advantages'
-@import '_advantages'
+@import '_consultation'
+@import '_carousel'
+@import '_catalog'
+@import '_forms'
 @import '_buttons'
 
+body, html
+    overflow-x: hidden
+
 .container
+    position: relative
     max-width: 950px
     margin: 0 auto
+
+.title
+    text-transform: uppercase
+    font-weight: 700
+    text-align: center
+    &_left
+        color: white
+        text-align: left
+        font-size: 36px

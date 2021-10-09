@@ -32,7 +32,22 @@
         margin: 0 auto
         margin-top: 20px
         width: 90%
-        span
+        i
             display: inline
             color: red
             margin-top: 0
+            font-family: serif
+
+@media (max-width: 767px)
+    .advantages
+        &__wrapper
+            flex-direction: column  
+            align-items: center
+        &__block
+            margin-top: 10px
+
+@media (max-width: 575px)
+    .advantages
+        &__header
+            font-size: 22px
+
